@@ -11,7 +11,6 @@ public class CorsConfig implements WebMvcConfigurer {
         myRegistry.addMapping("/")
                 .allowedMethods("*")
                 .allowedHeaders("*")
-                .allowedOrigins("http://localhost:3000", "http://127.0.0.1:3000") //fontend's url
-                .allowCredentials(true);
+                .allowedOrigins("http://localhost:3000", "http://127.0.0.1:3000", "*"); //fontend's url
     }
 }

@@ -113,7 +113,7 @@ public class ParserController {
     }
 
 
-    
+
 
     @DeleteMapping("/delete/{id}")
     public void deleteParse(@PathVariable Long id){
