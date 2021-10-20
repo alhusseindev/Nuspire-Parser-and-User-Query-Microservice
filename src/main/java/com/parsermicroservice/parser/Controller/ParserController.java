@@ -107,7 +107,7 @@ public class ParserController {
 
 
 
-    @GetMapping("/search")
+    @PostMapping("/search")
     public List<Parser> searchParsedData(@RequestBody Parser parsedDataQuery){
         return myParserRepository.findAll(Example.of(parsedDataQuery));
     }
